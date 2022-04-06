@@ -15,16 +15,18 @@ public class AquarioLombriga{
    
     public void crescer(){
         if(toLeft == 1){
-            if(sizeAq >= (sizeLo + headPos - 1)){
+            if(sizeAq < (sizeLo + headPos)){
+   
                 return;
             }else{
                 sizeLo++;
                 return;
             }
         }else{
-            if(headPos == sizeAq){
-                return;
+            if((headPos - sizeLo) <= 0){
+            	return;
             }else{
+            
                 sizeLo++;
                 return;
             }
@@ -33,19 +35,13 @@ public class AquarioLombriga{
    
     public void virar(){
         if(toLeft == 1){
-            if(headPos == 1){
-                toLeft = 0;
-                headPos = sizeLo;
-                return;
-            }
+            headPos = sizeLo + headPos - 1;
             toLeft = 0;
-        }
-        if(headPos == sizeAq){
-            toLeft = 1;
-            headPos = (sizeAq - sizeLo + 1);
             return;
         }
-        toLeft = 1;
+            toLeft = 1;
+            headPos = (headPos - sizeLo + 1);
+            return;
     }
    
    
