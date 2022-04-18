@@ -28,4 +28,4 @@ Estrutura de pastas:
 
 ## Arquivos Java sobre resta um
 
-> [Pasta onde estão os arquivos java da resolução da tarefa.](src/pt/c02oo/s02classe/s03lombriga)
+> [Pasta onde estão os arquivos java da resolução da tarefa.](src/pt/c02oo/s03relacionamento/s04restaum)
